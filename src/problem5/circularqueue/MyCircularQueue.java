@@ -22,17 +22,17 @@ public class MyCircularQueue {
 
     public void enqueue(int roll, int backlog, int a_count) {
         Student st = new Student(roll, backlog, a_count);
-        Node ns = new Node();
-        ns.student = student;
+        Node ns = new Node(st);
+        ns.student = st;
 
         if (front == null) {
             front = ns;
         } else {
-            rear.setNext(ns);
+            rear.next = ns;
         }
 
         rear = ns;
-        rear.setNext(front);
+        rear.next = front;
         count++;
     }
 }

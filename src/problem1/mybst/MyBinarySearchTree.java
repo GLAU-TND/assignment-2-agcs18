@@ -41,5 +41,13 @@ public class MyBinarySearchTree {
         }
     }
 
+    public void LeftNode() {
+        LeftNode(root);
+    }
+
+    public void NotLeft() {
+        System.out.println(count);
+    }
+
 
 }

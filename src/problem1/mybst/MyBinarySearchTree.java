@@ -68,5 +68,9 @@ public class MyBinarySearchTree {
         }
     }
 
+    void insertRec(int data) {
+        root = insert(root, data);
+    }
+
 
 }

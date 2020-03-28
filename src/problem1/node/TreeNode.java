@@ -11,9 +11,8 @@ public class TreeNode {
     int data;
     TreeNode right;
 
-    public TreeNode(int data) {
-        this.left = left;
-        this.data = data;
-        this.right = right;
+    public TreeNode(int item) {
+        data = item;
+        left = right = null;
     }
 }

@@ -35,4 +35,18 @@ public class MyCircularQueue {
         rear.next = front;
         count++;
     }
+
+    public void removeBackLog() {
+        while (count-- > 0) {
+            Student ss = front.student;
+            if ((ss.backlog - ss.a_count) > 0) {
+                front = front.next;
+                rear = rear.next;
+            } else {
+                rear.next = front.next;
+                front = front.next;
+            }
+        }
+    }
+
 }

@@ -7,4 +7,13 @@
 package problem1.node;
 
 public class TreeNode {
+    TreeNode left;
+    int data;
+    TreeNode right;
+
+    public TreeNode(int data) {
+        this.left = left;
+        this.data = data;
+        this.right = right;
+    }
 }

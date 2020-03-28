@@ -49,5 +49,24 @@ public class MyBinarySearchTree {
         System.out.println(count);
     }
 
+    public void preorder(TreeNode root) {
+        if (root == null) return;
+        else {
+            System.out.print(root.data + "\t");
+            preorder(root.left);
+            preorder(root.right);
+
+        }
+    }
+
+    public void postorder(TreeNode root) {
+        if (root == null) return;
+        else {
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(root.data + "\t");
+        }
+    }
+
 
 }

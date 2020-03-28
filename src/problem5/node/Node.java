@@ -9,8 +9,8 @@ import problem5.student.Student;
 
 // to define node properties
 public class Node {
-    Student student;
-    Node next;
+    public Student student;
+    public Node next;
 
     public Node(Student student) {
         student = student;

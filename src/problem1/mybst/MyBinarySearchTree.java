@@ -68,9 +68,15 @@ public class MyBinarySearchTree {
         }
     }
 
-   public void insertRec(int data) {
-       root = insert(root, data);
-   }
+    public void insertRec(int data) {
+        root = insert(root, data);
+    }
+
+    public void previouspost() {
+        postorder(root);
+        System.out.println();
+        preorder(root);
+    }
 
 
 }
